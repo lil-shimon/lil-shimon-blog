@@ -9,7 +9,7 @@ export interface Blog {
     publishedAt: string
     revisedAt: string
     title: string
-    body: string
+    content: string
     eyecatch: {
         url: string
         height: number

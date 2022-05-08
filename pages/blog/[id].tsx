@@ -11,7 +11,8 @@ type Props = {
     blog: Blog;
 };
 
-const BlogComponent: FC<Props> = ({ blog }) => {
+const BlogComponent: FC<Props> = ({blog}) => {
+    console.log('blog', blog)
     return (
         <div className="bg-gray-50">
             <div className="px-10 py-6 mx-auto">
@@ -33,9 +34,7 @@ const BlogComponent: FC<Props> = ({ blog }) => {
                         </div>
                     )}
                     <div className="mt-2">
-                        <div className="text-2xl text-gray-700 mt-4 rounded ">
-                            {blog.body}
-                        </div>
+                        <div dangerouslySetInnerHTML={{__html: blog.content}}/>
                     </div>
                 </div>
             </div>
