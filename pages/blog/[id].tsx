@@ -12,7 +12,6 @@ type Props = {
 };
 
 const BlogComponent: FC<Props> = ({blog}) => {
-    console.log('blog', blog)
     return (
         <div className="bg-gray-50">
             <div className="px-10 py-6 mx-auto">
